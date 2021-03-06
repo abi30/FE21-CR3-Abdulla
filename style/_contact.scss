@@ -1,0 +1,147 @@
+
+
+#contact {
+
+
+	
+	min-height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+	.heading {
+		h1 {
+			font-size: 4rem;
+			color: #000;
+			padding-top: 7rem;
+			margin-bottom: 2rem;
+			span {
+				color: #FFF200;
+			}
+		}
+	}
+	form {
+		background: #fff;
+		padding-top: 2rem;
+		margin: 1rem 2rem;
+		border-radius: 1rem;
+		box-shadow: 0 0 2rem #333;
+		.inputBox {
+			position: relative;
+			text-align: center;
+			input {
+				outline: none;
+				border: .2rem solid #333;
+				border-radius: .2rem;
+				margin: 2rem 0;
+				padding: 0 1rem;
+				background: none;
+				height: 4rem;
+				width: 90%;
+				font-size: 2rem;
+				&:focus {
+					~ {
+						h3 {
+							font-size: 1.6rem;
+							left: 6%;
+							top: -.5rem;
+							color: #ff3300;
+						}
+					}
+				}
+				&:valid {
+					~ {
+						h3 {
+							font-size: 1.6rem;
+							left: 6%;
+							top: -.5rem;
+							color: #ff3300;
+						}
+					}
+				}
+			}
+			textarea {
+				outline: none;
+				border: .2rem solid #333;
+				border-radius: .2rem;
+				margin: 2rem 0;
+				padding: 0 1rem;
+				background: none;
+				height: 4rem;
+				width: 90%;
+				font-size: 2rem;
+				padding: 1rem;
+				resize: none;
+				height: 20rem;
+				&:focus {
+					~ {
+						h3 {
+							font-size: 1.6rem;
+							left: 6%;
+							top: -.5rem;
+							color: #ff3300;
+						}
+					}
+				}
+				&:valid {
+					~ {
+						h3 {
+							font-size: 1.6rem;
+							left: 6%;
+							top: -.5rem;
+							color: #ff3300;
+						}
+					}
+				}
+			}
+			h3 {
+				position: absolute;
+				top: 3rem;
+				left: 7%;
+			}
+		}
+		input[type="submit"] {
+			outline: none;
+			border: none;
+			border-radius: 5rem;
+			color: #333;
+			font-size: 1.6rem;
+			font-weight: bold;
+			text-transform: capitalize;
+			letter-spacing: .2rem;
+			cursor: pointer;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			height: 4rem;
+			width: 12rem;
+			margin-bottom: 2rem;
+			margin-left: 4%;
+			background: #333;
+			color: #fff;
+
+			
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #FFF200;
+				height: 100%;
+				width: 0%;
+				transition: .5s;
+				z-index: -1;
+			}
+			&:hover {
+				&::before {
+					width: 100%;
+				}
+				color: #333;
+				background: #FFF200;
+				transition: .5s;
+
+			}
+		}
+	}
+}
+
+

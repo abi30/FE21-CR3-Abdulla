@@ -1,0 +1,33 @@
+
+*{
+    margin: 0 auto;
+    height: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: capitalize;
+    transition:all .5s linear;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.main_returent{
+    width: 90%;
+    padding: 0vw 0vw;
+    // border:  1px solid red;
+	box-shadow: 0 0 2rem #333;
+    
+
+}
+/* import styles for further html documents */ 
+@import "headNav";
+@import "home";
+@import "special";
+@import "about";
+@import "dish";
+@import "contact";
+@import "footer";
+

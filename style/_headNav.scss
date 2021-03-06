@@ -1,0 +1,63 @@
+.header{
+
+	background: rgb(59, 58, 58);
+
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-align: center;
+
+	.heading {
+		h1 {
+			font-size: 2rem;
+			font-family: 'lemonada',sans-serif;
+			font-weight: bolder;
+            font-style: italic;
+			text-shadow: .1rem .1rem .3rem #333;
+			padding-top: 4rem;
+			margin-bottom: 2rem;
+			color: #fff;
+
+
+
+			span {
+				color: #FFF200;
+			}
+		}
+		p {
+			color: #ccc;
+			font-size: 2rem;
+		}
+    }
+   
+    #logo{
+        height:10rem;
+
+      
+    }
+}
+
+
+.own_nav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	position: relative;
+    ul {
+    
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        .own_li {
+            margin: 0rem;
+            padding:0px 1rem;
+            .own_a{
+                color: #fff;
+                font-size: 1.2rem;
+                &:hover {
+                    color: #FFF200;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+

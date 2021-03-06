@@ -1,0 +1,50 @@
+
+.footer{
+
+	background: rgb(59, 58, 58);
+	margin-top: 2rem;
+    
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-align: center;
+
+	.heading {
+		h1 {
+			font-size: 2rem;
+			font-family: 'lemonada',sans-serif;
+			font-weight: bolder;
+            font-style: italic;
+			text-shadow: .1rem .1rem .3rem #333;
+			padding-top: 4rem;
+			margin-bottom: 2rem;
+			color: #fff;
+
+
+
+			span {
+				color: #FFF200;
+			}
+		}
+		p {
+			color: #ccc;
+			font-size: 2rem;
+		}
+    }
+   
+    #logo{
+        height:10rem;
+
+      
+    }
+	
+	h3 {
+		color: #fff;
+		font-size: 1.7rem;
+		
+		span {
+		font-size: 2.2rem;
+		color: #FFF200;
+	   }
+	}
+}
+

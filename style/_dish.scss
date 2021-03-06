@@ -1,0 +1,124 @@
+
+#dish {
+	background: rgb(59, 58, 58);
+
+	padding-bottom: 0.5rem;
+	min-height: 500px;
+	width:100%;
+	.heading {
+		h1 {
+			font-size: 4rem;
+			color: rgb(255, 255, 255);
+			padding-top: 7rem;
+			margin-bottom: 2rem;
+			span {
+				color: #FFF200;
+			}
+		}
+        h2{
+			color: rgb(255, 255, 255);
+			padding-top: 1rem;
+			margin-bottom: 2rem;
+			span {
+				color: #FFF200;
+			}
+        }
+	}
+	.box_container {
+		box-sizing: border-box;
+		align-items: center;
+		justify-content:space-around;
+        // border:2px solid #aaa321;
+		// width: 100%;
+        margin: 1rem ;
+        // padding: 2rem;
+        grid-gap:3rem .25rem ;
+		.my_box {
+
+            // height: 40rem;
+			width:21.8rem;
+			background: #fff;
+			padding: 0rem;
+			border: 10px solid #fff;
+			text-align: center;
+
+            box-sizing: border-box;
+			// border-radius: .5rem;
+            background-size: cover;
+            background-position: center;
+			cursor: pointer;
+			// overflow: hidden;
+			position: relative;
+			box-shadow: 0 0 .5rem #333;
+			img {
+				height: 50%;
+				width: 100%;
+				object-fit: cover;
+                // border-radius: .5rem;
+			}
+			.info {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: rgba(51, 51, 51, 0.6);
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				// flex-flow: column;
+				color: #fff;
+				transform: scale(0);
+				h3 {
+					font-size: 1.5rem;
+				}
+				p {
+					font-size: 1.3rem;
+					border-bottom: 0.2rem solid #FFF200;
+					border-top: 0.2rem solid #FFF200;
+					margin: 1rem 2rem;
+				}
+				button {
+					outline: none;
+					border: none;
+					border-radius: 5rem;
+					color: #333;
+					font-size: 1.5rem;
+					font-weight: bold;
+					text-transform: capitalize;
+					letter-spacing: .1rem;
+					cursor: pointer;
+					position: relative;
+					z-index: 1;
+					overflow: hidden;
+					height: 3rem;
+					width: 12rem;
+					&::before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: #FFF200;
+						height: 100%;
+						width: 0%;
+						transition: .5s;
+						z-index: -1;
+					}
+					&:hover {
+						&::before {
+							width: 100%;
+						}
+					}
+				}
+			}
+			&:hover {
+				.info {
+					transform: scale(0.8);
+				}
+			}
+		}
+	}
+}
+
+
+
