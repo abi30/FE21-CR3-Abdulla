@@ -5,8 +5,8 @@
           box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
   text-transform: capitalize;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 html {
@@ -20,6 +20,7 @@ html {
           box-shadow: 0 0 2rem #333;
 }
 
+/* import styles for further html documents */
 .header {
   background: #3b3a3a;
   -webkit-box-sizing: border-box;
@@ -366,7 +367,7 @@ html {
 }
 
 #dish .box_container .my_box {
-  width: 21.8rem;
+  width: 19rem;
   background: #fff;
   padding: 0rem;
   border: 10px solid #fff;
@@ -382,7 +383,7 @@ html {
 }
 
 #dish .box_container .my_box img {
-  height: 50%;
+  height: 16rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -390,6 +391,7 @@ html {
 
 #dish .box_container .my_box .info {
   position: absolute;
+  padding-bottom: 1rem;
   top: 0;
   left: 0;
   height: 100%;
@@ -453,8 +455,8 @@ html {
 }
 
 #dish .box_container .my_box:hover .info {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #contact {

@@ -35,10 +35,11 @@
         grid-gap:3rem .25rem ;
 		.my_box {
 
-            // height: 40rem;
-			width:21.8rem;
+            // height:100%;
+			width:19rem;
 			background: #fff;
 			padding: 0rem;
+			// margin-bottom: 1rem;
 			border: 10px solid #fff;
 			text-align: center;
 
@@ -51,13 +52,15 @@
 			position: relative;
 			box-shadow: 0 0 .5rem #333;
 			img {
-				height: 50%;
+				height: 16rem;
 				width: 100%;
 				object-fit: cover;
-                // border-radius: .5rem;
+               
 			}
 			.info {
 				position: absolute;
+				padding-bottom: 1rem;
+				
 				top: 0;
 				left: 0;
 				height: 100%;
@@ -113,7 +116,8 @@
 			}
 			&:hover {
 				.info {
-					transform: scale(0.8);
+					transform: scale(1);
+					
 				}
 			}
 		}
